@@ -310,3 +310,53 @@ Jelaskan apa yang telah Anda pelajari dan bagaimana tampilannya saat ini?
 1. Penggunaan props untuk mengontrol ukuran gambar
 2. Conditional rendering berdasarkan size prop
 3. Implementasi TypeScript interface untuk type safety
+
+### Langkah 4: Buat komponen baru MyProfileV2
+
+Buatlah file baru di src/components/myprofilev2.tsx berisi kode seperti berikut:
+
+![alt text](public/images/myprofilev2.png)
+
+### *Soal 9*
+
+Jika kode di atas terdapat error, silakan diperbaiki.
+
+Buatlah komponen Card dari kode di atas, lalu gunakan prop children untuk mengirimkan JSX yang berbeda.
+
+- app/global.css
+
+![alt text](public/images/global.png)
+
+- app/page.tsx
+
+![alt text](public/images/page-myprofilev2.png)
+
+- components/card.tsx
+
+![alt text](public/images/card-myprofilev2.png)
+
+- components/myprofilev2.tsx
+
+![alt text](public/images/myprofilev2-soal.png)
+
+Jelaskan apa yang telah Anda pelajari dan bagaimana tampilannya saat ini?
+
+**Yang Saya Pelajari:**
+1. **Penggunaan Children Props**
+   - Membuat komponen Card yang reusable
+   - Menggunakan children prop untuk konten yang fleksibel
+   - Memisahkan struktur card dari kontennya
+
+2. **Component Composition**
+   - Komponen Card dapat menampung berbagai jenis konten
+   - Struktur yang konsisten dengan konten yang dinamis
+   - Pemanfaatan TypeScript untuk type checking props
+
+3. **Styling**
+   - Penggunaan CSS global untuk styling card
+   - Implementasi responsive design
+   - Konsistensi visual antar komponen
+
+Hasilnya :
+
+![alt text](public/images/040747.png)

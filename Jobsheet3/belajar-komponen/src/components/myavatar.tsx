@@ -12,12 +12,11 @@ interface AvatarProps {
 
 export default function MyAvatar({ person, size }: AvatarProps) {
   const imageSize = size < 90 ? 's' : 'b';
-  const imageUrl = `https://i.imgur.com/${person.imageId}${imageSize}.jpg`;
   
   return (
     <Image
       className="avatar"
-      src={imageUrl}
+      src={`https://i.imgur.com/${person.imageId}${imageSize}.jpg`}
       alt={person.name}
       width={size}
       height={size}
