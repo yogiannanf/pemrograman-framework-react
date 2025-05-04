@@ -133,3 +133,21 @@ Silakan perbaiki kode JSX berikut ini. Anda boleh menggunakan konverter atau per
 - hasilnya :
 
 ![alt text](public/images/012825.png)
+
+### Praktikum 3: Menggunakan JSX dinamis
+
+### Langkah 1: Buat Komponen Baru
+
+Buatlah file baru di src/components/todolist.tsx berisi kode seperti berikut:
+
+![alt text](public/images/todolist_lngkh1.png)
+
+### *Soal 4*
+
+Kode di atas masih terdapat error, silakan diperbaiki.
+
+![alt text](public/images/todolist_soal.png)
+
+**Error yang diperbaiki:**
+1. `{person}` tidak bisa langsung dirender karena merupakan object
+2. Mengakses properti name dengan `{person.name}`
