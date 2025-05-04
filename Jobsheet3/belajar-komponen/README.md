@@ -53,3 +53,35 @@ Capture hasilnya dan buatlah laporan di README.md. Jelaskan apa yang telah Anda 
 1. Error "hostname not configured": Menambahkan domain 'i.imgur.com' di next.config.js
 2. Error layout: Menggunakan flexbox untuk mengatur posisi gambar
 3. Error styling: Menambahkan text-align center untuk judul
+
+### Praktikum 2: Mengimpor dan Mengekspor Komponen
+
+### Langkah 1: Buat Komponen Baru
+
+Buatlah file baru di src/components/gallery.tsx berisi kode seperti berikut:
+
+![alt text](public/images/compt-gallery.png)
+
+### Langkah 2: Impor Komponen
+
+Lakukan impor komponen di src/app/page.tsx seperti berikut ini. Hapus kode komponen lama Profile, lalu sesuaikan dengan komponen baru Gallery yang telah dibuat.
+
+![alt text](public/images/page-gallery.png)
+
+### *Soal 2*
+
+Capture hasilnya dan buatlah laporan di README.md. Jelaskan apa yang telah Anda pelajari dan bagaimana tampilannya saat ini?
+
+![alt text](public/images/004930.png)
+
+**Yang saya pelajari:**
+1. Cara membuat komponen terpisah (Gallery) yang menggunakan komponen lain (Profile)
+2. Penggunaan export dan import untuk berbagi komponen
+3. Penggunaan className untuk styling dengan Tailwind CSS
+4. Konsep komponen reusable dalam React
+
+**Tampilan saat ini:**
+- Menggunakan class columns-3 dari Tailwind untuk layout 3 kolom
+- Komponen Gallery membungkus 3 komponen Profile
+- Struktur komponen menjadi lebih modular dan maintainable
+- Layout tetap responsive dengan Tailwind CSS
