@@ -261,3 +261,52 @@ Jelaskan apa yang telah Anda pelajari dan bagaimana tampilannya saat ini?
 - Hasilnya
 
 ![alt text](public/images/025304.png)
+
+### Langkah 2: Buat fungsi getImageUrl
+
+Buatlah file baru di src/utils/utils.tsx berisi kode seperti berikut:
+
+![alt text](public/images/getImageUrl.png)
+
+### Langkah 3: Buat komponen baru
+
+Buatlah file baru di src/components/myprofile.tsx berisi kode seperti berikut:
+
+![alt text](public/images/page-profile-error.png)
+
+Tambahkan fungsi getImageUrlV2 seperti berikut di file yang sama yaitu utils.tsx
+
+src/utils/utils.tsx
+
+![alt text](public/images/utils-error.png)
+
+Pada contoh ini, komponen MyAvatar menerima prop size yang berupa angka dan akan digunakan untuk menentukan lebar dan tinggi < img >. Prop size dibuat 40 pada contoh ini. Bagaimanapun, jika Anda membuka gambar tersebut di web, Anda akan melihat bahwa gambarnya akan lebih besar (160 piksel). Ukuran gambar yang sebenarnya ditentukan oleh ukuran thumbnail yang Anda minta.
+
+### *Soal 8*
+
+Jika kode di atas terdapat error, silakan diperbaiki.
+
+Ubahlah komponen MyAvatar untuk diolah ukuran gambarnya berdasarkan prop size. Khususnya, jika size kurang dari 90, kirimkan 's' ("small") bukan 'b' ("big") pada fungsi getImageUrl. Pastikan bahwa perubahan yang Anda buat berjalan dengan cara me-render avatars dengan nilai prop size yang berbeda dan buka gambar pada tab baru di browser.
+
+- app/page.tsx
+
+![alt text](public/images/page-myavatar.png)
+
+- components/utils/utils.ts
+
+![alt text](public/images/utils-myavatar.png)
+
+- components/myavatar.tsx
+
+![alt text](public/images/myavatar.png)
+
+Jelaskan apa yang telah Anda pelajari dan bagaimana tampilannya saat ini?
+
+- Hasilnya :
+
+![alt text](public/images/034350.png)
+
+**Yang Saya Pelajari:**
+1. Penggunaan props untuk mengontrol ukuran gambar
+2. Conditional rendering berdasarkan size prop
+3. Implementasi TypeScript interface untuk type safety

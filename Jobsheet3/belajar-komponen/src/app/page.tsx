@@ -1,13 +1,25 @@
-import { Gallery } from "@/components/gallery";
-import TodoList from "@/components/todolist";
-import MyGallery from "@/components/mygallery";
+import MyAvatar from '@/components/myavatar';
 
 export default function Home() {
   return (
-    <section>
-      <h1 className="font-semibold text-slate-900 truncate pr-20 text-center">Ilmuwan yang luar biasa</h1>
-      <hr />
-      <MyGallery />
-    </section>
+    <div>
+      <h2>Small Avatar (40px)</h2>
+      <MyAvatar
+        person={{ 
+          name: 'Test User',
+          imageId: '7vQD0fP'
+        }}
+        size={40}
+      />
+      
+      <h2>Large Avatar (120px)</h2>
+      <MyAvatar
+        person={{ 
+          name: 'Test User',
+          imageId: '7vQD0fP'
+        }}
+        size={120}
+      />
+    </div>
   );
 }
