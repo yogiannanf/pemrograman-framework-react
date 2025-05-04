@@ -172,3 +172,45 @@ Apakah ada perbedaan pada tampilan web saat ini?
 
 - Hasilnya :
 ![alt text](public/images/015531.png)
+
+### Langkah 3: Ubah ekspresi URL di src
+
+Tetap di file src/components/todolist.tsx ubahlah objek person dan tambah variabel baseUrl seperti di bawah ini. URL lengkap gambar dibagi menjadi empat bagian: URL dasar, imageId, imageSize, dan ekstensi file.
+
+Kita ingin URL gambar menggabungkan atribut-atribut ini bersama-sama: URL dasar (selalu 'https://i.imgur.com/'), imageId ('7vQD0fP'), imageSize ('s'), dan ekstensi file (selalu '.jpg'). Namun, ada yang salah dengan atribut src.
+
+Bisakah anda memperbaikinya?
+
+![alt text](public/images/kodesebelum_langkah3.png)
+
+Perbaikannya :
+
+![alt text](public/images/kodesesudah_langkah3.png)
+
+### *Soal 6*
+
+Perbaiki kode tersebut pada bagian atribut src. Kode lainnya dapat Anda sesuaikan dari jawaban soal sebelumnya. Capture hasilnya dan buatlah laporan di README.md. Jelaskan apa yang telah Anda pelajari dan bagaimana tampilannya saat ini?
+
+**Kode yang Diperbaiki:**
+```tsx
+// filepath: src/components/todolist.tsx
+<img
+  className="avatar"
+  src={`${baseUrl}${person.imageId}${person.imageSize}.jpg`}
+  alt={person.name}
+/>
+```
+
+**Yang Saya Pelajari:**
+1. Penggunaan template literal (``) untuk menggabungkan string dan variabel
+2. Cara menggabungkan beberapa bagian URL menjadi satu string
+3. Penggunaan kurung kurawal {} untuk ekspresi JavaScript di JSX
+4. Pemisahan URL menjadi komponen yang lebih kecil untuk memudahkan maintenance
+
+### Catatan:
+
+Untuk memeriksa apakah perbaikan Anda berhasil, coba ubah nilai dari imageSize menjadi 'b'. Gambar harus menyesuaikan ukuran setelah diubah.
+
+![alt text](public/images/022358.png)
+
+untuk ukuran gambar Gregorio Y. Zara lebih besar.
