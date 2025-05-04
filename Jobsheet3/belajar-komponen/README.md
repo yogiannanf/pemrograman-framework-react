@@ -103,3 +103,33 @@ Berikut hasil jadinya:
 - hasilnya :
 
 ![alt text](public/images/011922.png)
+
+### *Soal 3*
+
+Silakan perbaiki kode JSX berikut ini. Anda boleh menggunakan konverter atau perbaiki secara manual.
+
+- components/soaltiga.tsx
+
+![alt text](public/images/compt_soal3.png)
+
+#### Perbaikan yang Dilakukan:
+
+1. **Menambahkan Parent Element**
+   - Membungkus semua konten dalam `<div className="intro">`
+   - Memastikan hanya ada satu root element
+
+2. **Menutup Semua Tag**
+   - Mengganti `<br>` menjadi `<br />`
+   - Memastikan semua tag memiliki closing tag
+
+3. **Menggunakan camelCase**
+   - Mengubah `class` menjadi `className`
+   - Mengikuti konvensi penamaan React
+
+4. **Memperbaiki Nested Tags**
+   - Memastikan tag bersarang ditutup dengan benar
+   - Menghindari tag yang tumpang tindih
+
+- hasilnya :
+
+![alt text](public/images/012825.png)

@@ -1,17 +1,12 @@
-export default function TodoList() {
+export default function Soaltiga() {
     return (
-      <div>
-        <h1>Daftar Tugas Putri</h1>
-        <img 
-          src="https://i.imgur.com/yXOvdOSs.jpg" 
-          alt="Putri" 
-          className="photo"
-        />
-        <ul>
-          <li>Mengerjakan PR</li>
-          <li>Pergi belanja</li>
-          <li>Minum vitamin</li>
-        </ul>
+      <div className="intro">
+        <h1>Selamat datang di website saya!</h1>
+        <p className="summary">
+          Anda dapat membaca uneg-unegku di sini.
+          <br /><br />
+          <b>Juga ada <i>foto</i></b> ilmuwan!
+        </p>
       </div>
     );
   }
