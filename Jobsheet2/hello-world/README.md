@@ -157,11 +157,66 @@ Browser telah tampil seperti gambar berikut ini
 
 Gantilah teks pada bagian atas dengan Nama - NIM Anda. 
 
+<img src = public/images/soal3.png>
+
 Jawaban dibuktikan dengan hasil screenshot.
 
-<img src = public/images/soal3.png>
+<img src = public/images/223200.png>
 
 Ketika Anda telah berhasil mengganti teks tersebut, Anda tidak perlu menjalankan perintah npm run dev dan tidak juga diperlukan me-reload halaman di browser. Tiba-tiba perubahan itu tampil, Mengapa terjadi demikian? Jelaskan!
 
 Karena Fast Refresh di Next.js memungkinkan perubahan kode langsung terlihat di browser tanpa reload manual. Saat kode diubah, Next.js otomatis mengompilasi ulang bagian yang berubah dan memperbarui tampilan sambil mempertahankan state aplikasi, sehingga sangat membantu dalam proses pengembangan.
 
+### Tugas Praktikum
+
+Cobalah buat project react lainnya dengan menggunakan framework Remix dan Gatsby. Ini tidak perlu di push, cukup screenshot dan jelaskan perbedaannya diantara ketiga framework tersebut (termasuk Next.js) di file README nomor 1.
+
+1. **Membuat Project Remix**
+
+<img src = public/images/233522.png>
+
+<img src = public/images/233630.png>
+
+<img src = public/images/232112.png>
+
+2. **Membuat Project Gatsby**
+
+<img src = public/images/234119.png>
+
+<img src = public/images/234149.png>
+
+<img src = public/images/234224.png>
+
+<img src = public/images/234243.png>
+
+<img src = public/images/image.png>
+
+3. **Perbandingan Framework**
+
+| Fitur | Next.js | Remix | Gatsby |
+|-------|---------|--------|---------|
+| **Rendering** | SSR, SSG, CSR | SSR focused | SSG focused |
+| **Performance** | Fast Refresh, Image Optimization | Nested Routing, Loader API | GraphQL, Image Processing |
+| **Data Fetching** | getStaticProps, getServerSideProps | Loader dan Action | GraphQL queries |
+| **Routing** | File-system based | File-system based | File-system + GraphQL |
+| **Use Case** | Universal (All-purpose) | Web Apps, Dynamic Sites | Static Sites, Blogs |
+
+**Perbedaan Utama:**
+
+1. **Next.js**
+   - All-in-one framework
+   - Fleksibel dalam rendering (SSR/SSG/CSR)
+   - Built-in optimizations
+   - Cocok untuk berbagai jenis aplikasi
+
+2. **Remix**
+   - Fokus pada SSR
+   - Nested routing yang powerful
+   - Data loading yang terintegrasi
+   - Cocok untuk aplikasi dinamis
+
+3. **Gatsby**
+   - Static site generator
+   - GraphQL untuk data layer
+   - Plugin ecosystem yang kaya
+   - Cocok untuk website statis dan blog
