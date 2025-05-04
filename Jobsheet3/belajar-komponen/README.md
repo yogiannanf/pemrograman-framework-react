@@ -85,3 +85,21 @@ Capture hasilnya dan buatlah laporan di README.md. Jelaskan apa yang telah Anda 
 - Komponen Gallery membungkus 3 komponen Profile
 - Struktur komponen menjadi lebih modular dan maintainable
 - Layout tetap responsive dengan Tailwind CSS
+
+### Menulis Markup dengan JSX
+
+Mengubah atribut di markup yang sudah ada bisa menjadi membosankan. Disarankan untuk menggunakan converter untuk mengubah HTML dan SVG-mu menjadi JSX. Konverter sangat berguna dalam praktiknya, namun tetap ada baiknya Anda perlu memahami kodenya sehingga Anda dapat menulis JSX sendiri dengan nyaman.
+
+Berikut hasil jadinya:
+
+- components/soaltiga.tsx
+
+![alt text](public/images/percobaansoal3.png)
+
+- app/page.tsx
+
+![alt text](public/images/page_percobaansoal3.png)
+
+- hasilnya :
+
+![alt text](public/images/011922.png)

@@ -1,11 +1,9 @@
-import Image from "next/image";
-import { Gallery } from "@/components/gallery";
+import TodoList from "@/components/soaltiga";
 
 export default function Home() {
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>Ilmuwan yang luar biasa</h1>
-      <Gallery />
+      <TodoList />
     </div>
   );
 }
