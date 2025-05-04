@@ -214,3 +214,50 @@ Untuk memeriksa apakah perbaikan Anda berhasil, coba ubah nilai dari imageSize m
 ![alt text](public/images/022358.png)
 
 untuk ukuran gambar Gregorio Y. Zara lebih besar.
+
+### Praktikum 4: Menggunakan Props
+
+### Langkah 1: Buat Komponen Baru
+
+Buatlah file baru di src/components/mygallery.tsx berisi kode seperti berikut:
+
+![alt text](public/images/mygallery_sebelum.png)
+
+### *Soal 7*
+
+Jika kode di atas terdapat error, silakan diperbaiki.
+
+Komponen MyGallery ini berisi dua markup yang sama persis. Ekstraklah menjadi komponen MyProfile untuk mengurangi duplikasi. Anda perlu memilih props apa saja yang akan dikirimkan.
+
+- Komponen MyGallery
+
+![alt text](public/images/mygallery.png)
+
+- Komponen MyProfile 
+
+![alt text](public/images/myprofile.png)
+
+- components/utils/utils.ts
+
+![alt text](public/images/utils.png)
+
+- app/page.tsx
+
+![alt text](public/images/page-mygallery.png)
+
+Jelaskan apa yang telah Anda pelajari dan bagaimana tampilannya saat ini?
+
+**Yang Saya Pelajari:**
+1. **Pembuatan Komponen**
+   - Memecah komponen besar menjadi komponen kecil reusable
+   - Menggunakan TypeScript interface untuk props
+   - Menerapkan konsep DRY (Don't Repeat Yourself)
+
+2. **Penggunaan Props**
+   - Mengirim data antar komponen
+   - Props untuk gambar, nama, profesi, dan pencapaian
+   - Type checking dengan TypeScript
+
+- Hasilnya
+
+![alt text](public/images/025304.png)
