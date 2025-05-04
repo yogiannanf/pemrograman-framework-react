@@ -151,3 +151,24 @@ Kode di atas masih terdapat error, silakan diperbaiki.
 **Error yang diperbaiki:**
 1. `{person}` tidak bisa langsung dirender karena merupakan object
 2. Mengakses properti name dengan `{person.name}`
+
+### Langkah 2: Impor Komponen
+
+Lakukan impor komponen di src/app/page.tsx seperti berikut ini.
+
+![alt text](public/images/importkomponen_langkah2.png)
+
+### *Soal 5*
+
+Buka file src/components/todolist.tsx lakukan ekstrak URL gambar ke dalam objek person.
+
+![alt text](public/images/soal5.png)
+
+Apakah ada perbedaan pada tampilan web saat ini?
+
+**Perbedaan Tampilan:**
+- Tidak ada perbedaan visual pada tampilan web
+- Perubahan hanya pada struktur kode untuk maintainability yang lebih baik
+
+- Hasilnya :
+![alt text](public/images/015531.png)
